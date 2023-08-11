@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 84%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+
+        .logo {
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: default;
+            opacity: 0;
+            animation: slideRight 1s ease forwards;
+
+        }
+
+
+
+
+        .navbar a {
+            display: inline-block;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 45px;
+            transition: 0.3s;
+            opacity: 0;
+            animation: slideTop 0.5s ease forwards;
+            animation-delay: calc(0.2s * var(--i));
+        }
+
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #0ef;
+        }
+
+
+
+
+
+        body {
+            background-color: black;
+        }
+
+        .container img {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            border-radius: 268px;
+            animation: Contact 3s ease-in-out infinite alternate-reverse;
+            margin: 87px 3px;
+        }
+
+        .container2 {
+            color: white;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .table {
+            color: white;
+        }
+    
+        .social-media{
+            margin: 0px 96px;
+        }
+
+        .social-media a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #0ef;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+            transition: 0.5s ease;
+            opacity: 0;
+            animation: slideLeft 1s ease forwards;
+            animation-delay: calc(0.2s * var(--i));
+        }
+
+        .social-media a:hover {
+            background: #0ef;
+            color: black;
+            box-shadow: 0 0 20px #0ef;
+        }
+
+
+        @keyframes Contact {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-24px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+
+
+        @keyframes slideTop {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+        }
+
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+
+        <nav class="navbar">
+            <a href="/index.html" style="--i:1;">Home</a>
+            <a href="/morehtml/About.html" style="--i:2;">About</a>
+            <a href="/morehtml/skills.html" style="--i:3;">Skills</a>
+            <a href="#" style="--i:4;">Portfolio</a>
+            <a href="/morehtml/Contact.html" style="--i:5;" class="active">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <img src="../photo3.png" alt="photo" width="500px" height="500px">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="table">
+        <table>
+            <tr>
+
+                <th>Name : </th>
+                <th>Aadesh Satpute </th>
+            </tr>
+            <tr>
+                <th>DOB: </th>
+                <th>12/09/2000</th>
+            </tr>
+            <tr>
+                <th>Address : </th>
+                <th>Betul,MadhyaPradesh</th>
+            </tr>
+
+            <tr>
+                <th>Mobile No. : </th>
+                <th>7225012026, 8602621878</th>
+            </tr>
+            <tr>
+                <th>Email : </th>
+                <th>aadeshsatpute375@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Github : </th>
+                <th>https://Github.com/Aadinath1234</th>
+            </tr>
+
+            <tr>
+                <th>Linked-In : </th>
+                <th>https://www.Linkedin.com/in/aadesh-satpute-894220224</th>
+            </tr>
+
+
+
+
+        </table>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/aadesh.satpute.3" style="--i:7;"><i class="bx bxl-facebook"></i></a>
+            <a href="https://Github.com/Aadinath1234" style="--i:8;"><i class="bx bxl-github" ></i></a>
+            <a href="https://www.instagram.com/aadeshsatpute375/" style="--i:9;"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.Linkedin.com/in/aadesh-satpute-894220224" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+
+</html>

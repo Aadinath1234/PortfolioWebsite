@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutpage</title>
+    
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+           
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 84%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+     font-size: 25px;
+     color: white;
+     text-decoration: none;
+     font-weight: 600;
+     cursor: default;
+     opacity: 0;
+     animation: slideRight 1s ease forwards;
+
+}
+
+
+   
+
+.navbar a{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 45px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+
+.navbar a:hover,
+.navbar a.active{
+    color: #0ef;
+}
+
+
+
+
+       body{
+        background-color: black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+
+        section img {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            border-radius: 268px;
+            animation: About 3s ease-in-out infinite alternate-reverse;
+            margin: -150px 3px;
+}
+
+        .container2{
+            width: 50vw;
+            height: 50vh;
+            margin: 257px 50px;
+        }
+       h1{
+        color: rgb(149, 49, 122);
+       }
+
+
+        
+
+@keyframes About {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+
+        
+@keyframes slideTop {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+   
+   
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+    
+    
+        <nav class="navbar">
+            <a href="/index.html" style="--i:1;">Home</a>
+            <a href="/morehtml/About.html" style="--i:2;"   class="active">About</a>
+            <a href="/morehtml/skills.html" style="--i:3;">Skills</a>
+            <a href="#" style="--i:4;">Portfolio</a>
+            <a href="/morehtml/Contact.html" style="--i:5;">Contact</a>
+    
+        </nav>
+    
+        </header>
+
+
+        <section>
+            <img src="../photo3.png" alt="photo" width="500px" height="500px">
+        </section>
+  
+
+
+    <div class="container2">
+        Hello!, This is Aadesh and I'm a FULL STACK DEVELOPER . I will help you create and design webpages for website.
+        Landing pages, Blog website, simple website and Responisve webpages.I am using #HTML #CSS #JavaScript #Node.js
+        #MongoDB.I will provide you, your desired outputs with my Best efforts.
+       <h1> <span class="multiple-textt"></span></h1>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed(".multiple-textt",{
+    strings:["# HTML", "#   CSS", "#  JavaScript","#  Node.js","#  MongoDB"],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
+    loop:true
+})
+    </script>
+
+</body>
+
+</html>
